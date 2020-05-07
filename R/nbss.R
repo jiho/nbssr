@@ -7,6 +7,8 @@
 #'
 #' @return a data.frame with columns
 #'
+#' @export
+#'
 #' @examples
 #' # Biovolume spectrum
 #' ss <- nbss(uvp$volume_mm3)

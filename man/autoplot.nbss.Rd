@@ -9,6 +9,9 @@ autoplot.nbss(object)
 \arguments{
 \item{object}{result of function nbss()}
 }
+\value{
+A ggplot object
+}
 \description{
 Plot an nbss object
 }

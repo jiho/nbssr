@@ -1,6 +1,10 @@
 #' Plot an nbss object
 #'
 #' @param object result of function nbss()
+#'
+#' @export
+#'
+#' @return A ggplot object
 autoplot.nbss <- function(object) {
   ggplot(object) +
     # geom_smooth(aes(x=bin, y=norm_y), data=ss[ss$status == "ok",], se=F, method="lm") +
