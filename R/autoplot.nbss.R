@@ -12,7 +12,7 @@ autoplot.nbss <- function(object) {
     scale_shape_manual("Status", values=c(19, 4)) +
     scale_x_log10() +
     scale_y_log10() +
-    labs(y=paste0("Normalised ", attr(ss, "type")))
+    labs(y=paste0("Normalised ", attr(object, "type")))
 }
 
 # h <- nbss(o$vol, binwidth=0.1)
