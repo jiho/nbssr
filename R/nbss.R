@@ -22,6 +22,9 @@
 #'   x=expression("Biovolume (mm"^3*")"),
 #'   y="Normalised biovolume"
 #' )
+#' # Abundance spectrum
+#' ss <- nbss(uvp$length_mm, binwidth=0.05)
+#' autoplot(ss) + labs(x="Length (mm)")
 nbss <- function(x, type=c("biomass", "abundance"), base=10, binwidth=0.1) {
 
   # check arguments
