@@ -17,6 +17,13 @@ nbss(x, type = c("biomass", "abundance"), base = 10, binwidth = 0.1)
 }
 \value{
 a data.frame with columns
+\itemize{
+\item \code{bin_log} value of the bin center in log scale;
+\item \code{bin} value of the bin center in original scale;
+\item \code{binwidth} width of the bin center in original scale;
+\item \code{y} sum of biomass/biovolume for a biomass spectrum; count of the objects in the bin for an abundance spectrum;
+\item \code{norm_y} \code{y/binwidth}
+}
 }
 \description{
 Normalised Biomass Size Spectrum

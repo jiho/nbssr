@@ -6,6 +6,11 @@
 #' @param binwidth width of bins in log10 scale.
 #'
 #' @return a data.frame with columns
+#' - `bin_log` value of the bin center in log scale;
+#' - `bin` value of the bin center in original scale;
+#' - `binwidth` width of the bin center in original scale;
+#' - `y` sum of biomass/biovolume for a biomass spectrum; count of the objects in the bin for an abundance spectrum;
+#' - `norm_y` `y/binwidth`
 #'
 #' @export
 #'
