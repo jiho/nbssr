@@ -4,10 +4,13 @@
 \alias{nbss}
 \title{Normalised Biomass Size Spectrum}
 \usage{
-nbss(x, type = c("biomass", "abundance"), base = 10, binwidth = 0.1)
+nbss(x, w = rep(1, length(x)), type = c("biomass", "abundance"),
+  base = 10, binwidth = 0.1)
 }
 \arguments{
 \item{x}{vector of biomasses, biovolumes, or lengths.}
+
+\item{w}{vector of weights, typically concentrations associated with individual measurements in \code{x}.}
 
 \item{type}{whether to compute a biomass/biovolume or abundance spectrum.}
 
